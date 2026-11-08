@@ -48,3 +48,11 @@
 - [ ] 6.2 `withdraw`/`parseAndWithdraw` — `Result`
 - [ ] 6.3 `withLedgerBatch` — `use`
 - [ ] Веха: CLI-сценарий переводов
+
+## Модуль 07 — Корутины
+- [ ] 7.1 `retry` — экспоненциальная задержка
+- [ ] 7.2 `TransferGateway` — временные сбои vs бизнес-отказы
+- [ ] 7.3 `loadAccounts` — `async`/`awaitAll`
+- [ ] 7.4 `withTimeoutFallback` — таймауты
+- [ ] 7.5 `runAllSettled` — `supervisorScope`
+- [ ] Веха: параллельные вызовы с ретраями
