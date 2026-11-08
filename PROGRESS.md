@@ -14,3 +14,9 @@
 - [ ] 1.3 `feeBps` — диапазоны в `when`, `require`
 - [ ] 1.4 `receiptSummary` — циклы, `buildString`, накопление итога
 - [ ] Веха: CLI считает и форматирует суммы
+
+## Модуль 02 — Null-safety и Java interop
+- [ ] 2.1 `CustomerDirectory` — platform types, `?.`, `?:`, адаптер
+- [ ] 2.2 `LazyCustomerIndex` — `by lazy`, однократное построение
+- [ ] 2.3 `NullSafetyKata` — `takeIf`, `toIntOrNull`, `requireNotNull`/`error`
+- [ ] Веха: безопасная обёртка над Java-справочником
