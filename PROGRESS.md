@@ -71,3 +71,9 @@
 - [ ] 9.3 `ledgerJson` — настройки `Json`
 - [ ] 9.4 `loadConfig` — типизированный конфиг из env
 - [ ] Веха: JSON-контракты и конфиг из env
+
+## Модуль 10 — Голый HTTP → Ktor
+- [ ] 10.1 `MiniRouter` — routing вручную
+- [ ] 10.2 `toHttpStatus` — доменные ошибки → HTTP
+- [ ] 10.3 `ledgerModule` — Ktor API
+- [ ] Веха: REST API в памяти
