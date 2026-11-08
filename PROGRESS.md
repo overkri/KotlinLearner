@@ -28,3 +28,10 @@
 - [ ] 3.4 `Account` — иммутабельность, `copy`, `version`
 - [ ] 3.5 `TransferError` — `sealed interface`, `data object`
 - [ ] Веха: доменная модель Money/Account/TransferError
+
+## Модуль 04 — Коллекции и Sequence
+- [ ] 4.1 `statement` — filter/sorted/running balance
+- [ ] 4.2 `totalsByCurrency`, `busiestAccounts`, `averageDebit`
+- [ ] 4.3 `firstAbove` — ленивая `Sequence`
+- [ ] 4.4 `chunkIds`, `indexById`, `partitionByStatus`
+- [ ] Веха: выписка и отчёты по проводкам
