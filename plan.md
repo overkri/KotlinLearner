@@ -211,4 +211,14 @@ ledger-kt/
 - [ ] README, PROGRESS, `docs/99-next-steps.md`, cheatsheet написаны.
 
 ### 7.3. Отклонения (заполняет агент по ходу)
-_Пока пусто._
+
+- **Модульные спецификации.** В исходном репозитории был только `plan.md`; файлы `modules/00-*.md … modules/14-*.md` созданы агентом по индексу §3/§5 и поддерживаются в актуальном состоянии.
+- **Версии.** Взяты последние стабильные патчи проверенных линий (на ноябрь 2026): Kotlin **2.4.21**, Ktor **3.6.1**, Exposed **1.6.1**, Spring Boot **4.1.2**, Testcontainers **2.0.5**, kotlinx.coroutines **1.11.0**, kotlinx.serialization **1.12.0**. Сборка проверена целиком.
+- **JUnit.** Вместо JUnit 5 используется **JUnit Jupiter 6.0.3**, который приходит с Spring Boot 4.1.2 и поддерживается Gradle 9.5.1; API `@Test`/`@Tag` совместим.
+- **Testcontainers 2.x.** Артефакты переименованы: `testcontainers-postgresql`, `testcontainers-kafka`, `testcontainers-junit-jupiter`; классы PostgreSQL переехали в `org.testcontainers.postgresql`.
+- **JDK.** На машине не было JDK 21 (только 25/27); настроен Foojay toolchain resolver, JDK 21 автоматически скачивается Gradle. Это соответствует требованию toolchain 21 и не влияет на JVM запуска Gradle.
+- **Spring Boot 4.** Используются новые стартеры/пакеты: `spring-boot-starter-webmvc-test`, `org.springframework.boot.webmvc.test.autoconfigure.*`, Jackson 3 (`tools.jackson`), Hibernate 7.4. JPA-срез модуля 14 работает на H2; интеграционные тесты Postgres — в модуле 12 через Testcontainers.
+- **Контракты событий.** В `DomainEvent.TransferCompleted`/`TransferRejected` добавлены `from`/`to`, чтобы проекция балансов (модуль 08) и outbox-пайплайн (модуль 13) были осмысленными.
+- **Дополнительные упражнения.** Добавлены `JvmAnnotationsKata` (`@JvmOverloads`/`@Throws`), `ReviewKata`, `PricingEngine` (Java→Kotlin), чтобы покрыть §1.3 и модуль 14.
+- **Интеграционные тесты.** Для БД/Redis/Kafka используются синглтон-фикстуры Testcontainers; `verify-solutions` без аргумента запускает полный набор, включая Docker.
+

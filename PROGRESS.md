@@ -102,3 +102,12 @@
 - [ ] 13.4 `KafkaEventPublisher` — producer
 - [ ] 13.5 `KafkaEventConsumer` — poll + manual commit
 - [ ] Веха: E2E переводы → outbox → Kafka → проекция
+
+## Модуль 14 — Spring Boot + Kotlin, ревью, миграция
+- [ ] 14.1 `SpringAccountService` — JPA + `@Transactional`
+- [ ] 14.2 `AccountController` — REST DTO
+- [ ] 14.3 `ApiExceptionHandler` — единый формат ошибок
+- [ ] 14.4 `PricingEngine` — Java → Kotlin
+- [ ] 14.5 `ReviewKata` — ревью и дедупликация
+- [ ] 14.6 `JvmAnnotationsKata` — `@JvmOverloads`, `@Throws`
+- [ ] Веха: тот же срез на Spring Boot 4
