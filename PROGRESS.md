@@ -20,3 +20,11 @@
 - [ ] 2.2 `LazyCustomerIndex` — `by lazy`, однократное построение
 - [ ] 2.3 `NullSafetyKata` — `takeIf`, `toIntOrNull`, `requireNotNull`/`error`
 - [ ] Веха: безопасная обёртка над Java-справочником
+
+## Модуль 03 — Типы и модель домена
+- [ ] 3.1 `Money` — `data class`, `init`, `companion object`
+- [ ] 3.2 `Identifiers` — `@JvmInline value class`
+- [ ] 3.3 `AccountStatus` — `enum` и переходы
+- [ ] 3.4 `Account` — иммутабельность, `copy`, `version`
+- [ ] 3.5 `TransferError` — `sealed interface`, `data object`
+- [ ] Веха: доменная модель Money/Account/TransferError
