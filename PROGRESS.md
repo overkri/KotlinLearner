@@ -35,3 +35,10 @@
 - [ ] 4.3 `firstAbove` — ленивая `Sequence`
 - [ ] 4.4 `chunkIds`, `indexById`, `partitionByStatus`
 - [ ] Веха: выписка и отчёты по проводкам
+
+## Модуль 05 — Функции, расширения, DSL
+- [ ] 5.1 `MoneyOperators` — операторы и `total()`
+- [ ] 5.2 `TransferRequestDsl` — `@DslMarker`, `apply`
+- [ ] 5.3 `ScopeFunctions` — `let`, `with`, `takeIf`
+- [ ] 5.4 `TransferLimits` — `Delegates.vetoable`
+- [ ] Веха: `transferRequest { }` и `Money + Money`
