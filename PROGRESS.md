@@ -77,3 +77,11 @@
 - [ ] 10.2 `toHttpStatus` — доменные ошибки → HTTP
 - [ ] 10.3 `ledgerModule` — Ktor API
 - [ ] Веха: REST API в памяти
+
+## Модуль 11 — Ktor для продакшена
+- [ ] 11.1 `configureJwt`/`protected` — JWT
+- [ ] 11.2 `healthRoutes` — live/ready
+- [ ] 11.3 `configureMetrics`/`metricsRoute` — Prometheus
+- [ ] 11.4 `installRequestId` — request id
+- [ ] 11.5 `ShutdownCoordinator` — graceful shutdown
+- [ ] Веха: защищённый наблюдаемый сервис

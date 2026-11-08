@@ -1,0 +1,14 @@
+# Пример production-конфигурации. Реальный загрузчик — ledger.config.loadConfig(System.getenv()).
+ledger:
+  http:
+    host: 0.0.0.0
+    port: 8080
+  db:
+    url: ${DB_URL}
+    user: ${DB_USER:ledger}
+    password: ${DB_PASSWORD:ledger}
+    pool-size: ${DB_POOL_SIZE:10}
+  jwt:
+    issuer: ${JWT_ISSUER}
+    audience: ${JWT_AUDIENCE}
+    jwks-url: ${JWT_JWKS_URL}
