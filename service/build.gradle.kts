@@ -35,6 +35,7 @@ dependencies {
     implementation(libs.exposed.jdbc)
     implementation(libs.exposed.java.time)
     implementation(libs.lettuce)
+    implementation(libs.kotlinx.coroutines.reactive)
     implementation(libs.kafka.clients)
 
     implementation(libs.logback.classic)

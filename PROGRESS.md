@@ -94,3 +94,11 @@
 - [ ] 12.5 `migrate` — Flyway
 - [ ] 12.6 `findByAccountIds` — N+1
 - [ ] Веха: сервис на Postgres
+
+## Модуль 13 — Redis, идемпотентность, Kafka, outbox
+- [ ] 13.1 `IdempotentTransferService` — кэш результата
+- [ ] 13.2 `RedisIdempotencyStore` — Lettuce coroutines
+- [ ] 13.3 `OutboxPublisher` — at-least-once
+- [ ] 13.4 `KafkaEventPublisher` — producer
+- [ ] 13.5 `KafkaEventConsumer` — poll + manual commit
+- [ ] Веха: E2E переводы → outbox → Kafka → проекция
