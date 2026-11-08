@@ -56,3 +56,11 @@
 - [ ] 7.4 `withTimeoutFallback` — таймауты
 - [ ] 7.5 `runAllSettled` — `supervisorScope`
 - [ ] Веха: параллельные вызовы с ретраями
+
+## Модуль 08 — Flow, каналы, общее состояние
+- [ ] 8.1 `TransferEventBus` — `SharedFlow`/replay
+- [ ] 8.2 `BalanceProjector` — `StateFlow.update`
+- [ ] 8.3 `AccountLockRegistry` — per-key `Mutex`
+- [ ] 8.4 `TransferQueue` — `Channel` и backpressure
+- [ ] 8.5 `FlowAnalytics` — `runningFold`
+- [ ] Веха: конкурентные переводы без гонок

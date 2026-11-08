@@ -11,12 +11,16 @@ sealed interface DomainEvent {
 
     data class TransferCompleted(
         val transferId: TransferId,
+        val from: AccountId,
+        val to: AccountId,
         val amount: Money,
         override val occurredAt: Instant,
     ) : DomainEvent
 
     data class TransferRejected(
         val transferId: TransferId,
+        val from: AccountId,
+        val to: AccountId,
         val error: TransferError,
         override val occurredAt: Instant,
     ) : DomainEvent
