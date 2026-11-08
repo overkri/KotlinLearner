@@ -42,3 +42,9 @@
 - [ ] 5.3 `ScopeFunctions` — `let`, `with`, `takeIf`
 - [ ] 5.4 `TransferLimits` — `Delegates.vetoable`
 - [ ] Веха: `transferRequest { }` и `Money + Money`
+
+## Модуль 06 — Ошибки и Result
+- [ ] 6.1 `TransferEngine` — sealed-ошибки и two-phase save
+- [ ] 6.2 `withdraw`/`parseAndWithdraw` — `Result`
+- [ ] 6.3 `withLedgerBatch` — `use`
+- [ ] Веха: CLI-сценарий переводов
