@@ -85,3 +85,12 @@
 - [ ] 11.4 `installRequestId` — request id
 - [ ] 11.5 `ShutdownCoordinator` — graceful shutdown
 - [ ] Веха: защищённый наблюдаемый сервис
+
+## Модуль 12 — База данных
+- [ ] 12.1 `createDataSource` — HikariCP
+- [ ] 12.2 `JdbcAccountRepository` — JDBC + optimistic lock
+- [ ] 12.3 `ExposedAccountRepository` — Exposed DSL
+- [ ] 12.4 `TxRunner` — транзакции
+- [ ] 12.5 `migrate` — Flyway
+- [ ] 12.6 `findByAccountIds` — N+1
+- [ ] Веха: сервис на Postgres
