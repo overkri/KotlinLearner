@@ -26,9 +26,9 @@ try {
     Push-Location $temp
     try {
         if ($Module) {
-            & .\gradlew.bat test "-Pmodule=$Module"
+            & .\gradlew.bat test --rerun-tasks --no-build-cache "-Pmodule=$Module"
         } else {
-            & .\gradlew.bat test
+            & .\gradlew.bat test --rerun-tasks --no-build-cache
         }
         $code = $LASTEXITCODE
     } finally {

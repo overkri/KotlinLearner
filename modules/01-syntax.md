@@ -41,7 +41,7 @@ CLI-сценарий: `receiptSummary(listOf(1234, 500), "USD")` печатае�
 - [ ] Все четыре упражнения решены.
 - [ ] `./gradlew test -Pmodule=01` зелёный.
 - [ ] Квиз пройден.
-- [ ] В `PROGRESS.md` отмечены пункты 1.1–1.4.
+- [ ] Упражнения 1.1–1.4 выполнены и проверены тестами.
 
 ## Gate
 `./gradlew build -x test` — зелёный; `./gradlew test -Pmodule=01` на заглушках — только `NotImplementedError`; `scripts/verify-solutions.ps1 -Module 01` — зелёный.

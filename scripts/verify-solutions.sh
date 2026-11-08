@@ -22,7 +22,7 @@ cp -R "$ROOT/solutions/." "$TMP/"
 
 cd "$TMP"
 if [[ -n "$MODULE" ]]; then
-    ./gradlew test "-Pmodule=$MODULE"
+    ./gradlew test --rerun-tasks --no-build-cache "-Pmodule=$MODULE"
 else
-    ./gradlew test
+    ./gradlew test --rerun-tasks --no-build-cache
 fi
