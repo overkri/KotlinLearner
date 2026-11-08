@@ -64,3 +64,10 @@
 - [ ] 8.4 `TransferQueue` — `Channel` и backpressure
 - [ ] 8.5 `FlowAnalytics` — `runningFold`
 - [ ] Веха: конкурентные переводы без гонок
+
+## Модуль 09 — Сериализация и конфигурация
+- [ ] 9.1 `MoneyAsStringSerializer` — `KSerializer`
+- [ ] 9.2 `TransferDto` — DTO ↔ domain, коды ошибок
+- [ ] 9.3 `ledgerJson` — настройки `Json`
+- [ ] 9.4 `loadConfig` — типизированный конфиг из env
+- [ ] Веха: JSON-контракты и конфиг из env
