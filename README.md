@@ -34,7 +34,7 @@ Exposed, Redis и Spring Boot 4.
 | Компонент | Версия |
 |---|---|
 | Версия курса | **1.0.0** |
-| Kotlin / Gradle | 2.4.21 / 9.5.1 |
+| Kotlin / Gradle | 2.4.21 / 9.8.2 |
 | JDK toolchain | 21 (Eclipse Temurin, auto-provision через Foojay) |
 | Ktor | 3.6.1 |
 | Exposed | 1.6.1 (`org.jetbrains.exposed.v1.*`) |
@@ -51,6 +51,8 @@ Exposed, Redis и Spring Boot 4.
 
 - JDK 21 (Gradle скачает Temurin 21 автоматически через Foojay, если JDK 21 нет
   локально).
+- Gradle JVM 17–27; рекомендуется установленный JDK 25 (или 21/26). Это JVM, на
+  которой запускается сам Gradle, она не заменяет toolchain 21 для компиляции.
 - IntelliJ IDEA с Kotlin-плагином — рекомендуется.
 - Docker Desktop — для модулей 12–13, интеграционных тестов и `verify-solutions`
   без `-Module`.
@@ -203,6 +205,12 @@ Hibernate 7, Jakarta EE 11, тестовые аннотации переехал
 **Kotlin 2.4 и Spring Boot 4.1.** Boot 4.1 собран с Kotlin 2.3; проект использует
 2.4.21. Совместимость проверяется сборкой; при проблемах зафиксируйте Kotlin 2.3.x
 и запишите отклонение.
+
+**IntelliJ: Incompatible Gradle JVM version.** Gradle 9.8.2 поддерживает Java
+17–27. Выберите установленный JDK 25 (или 21/26) в
+`Settings → Build, Execution, Deployment → Build Tools → Gradle → Gradle JVM`.
+Toolchain 21 для компиляции задаётся отдельно в `build.gradle.kts` и скачивается
+Foojay, даже если Gradle запущен на JDK 25/27.
 
 **Почему `verify-solutions` медленнее обычного `test`?** Скрипт намеренно
 добавляет `--rerun-tasks --no-build-cache`, чтобы тесты выполнялись фактически,

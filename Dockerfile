@@ -1,4 +1,4 @@
-FROM gradle:9.5-jdk21 AS build
+FROM gradle:9.8-jdk21 AS build
 WORKDIR /workspace
 COPY . .
 RUN gradle :service:installDist --no-daemon

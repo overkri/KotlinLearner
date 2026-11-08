@@ -7,7 +7,11 @@
 
 ## [Unreleased]
 
-Пока нет незавершённых изменений.
+### Changed
+
+- Gradle wrapper обновлён до **9.8.2**: добавлена поддержка Java 27, сохранена
+  совместимость с Java 17–25. Docker build-образ обновлён до `gradle:9.8-jdk21`.
+- README уточняет разницу между Gradle JVM и Kotlin toolchain 21.
 
 ## [1.0.0] — 2026-11-08
 
