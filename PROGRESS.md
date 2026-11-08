@@ -7,3 +7,10 @@
 - [ ] 0.2 `ReceiptPrinter` — constructor injection, `fun interface`, MockK
 - [ ] 0.3 `environmentSummary` — top-level-функция, строковые шаблоны, toolchain
 - [ ] Веха: проект собирается, первый Java↔Kotlin вызов работает
+
+## Модуль 01 — Синтаксис и выражения
+- [ ] 1.1 `formatMinor` — `when`-выражение и строковые шаблоны
+- [ ] 1.2 `parseAmount` — nullable-результат и ручной разбор строки
+- [ ] 1.3 `feeBps` — диапазоны в `when`, `require`
+- [ ] 1.4 `receiptSummary` — циклы, `buildString`, накопление итога
+- [ ] Веха: CLI считает и форматирует суммы
