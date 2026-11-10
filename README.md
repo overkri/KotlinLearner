@@ -226,3 +226,5 @@ Foojay, даже если Gradle запущен на JDK 25/27.
 ## Лицензия
 
 [MIT](LICENSE) © 2026 LedgerKt contributors.
+
+Вайб — [Vibe Coding License 1.0](./VIBE.md): это манифест, а не лицензия. Код остаётся под MIT.
